@@ -1,0 +1,39 @@
+
+
+<div id="<%= dom_id course %>" class="p-5 max-w-screen-sm">
+  <div class="rounded overflow-hidden shadow-lg rounded-b-md fd-cl ">
+    <% if course.cover_image.attached? %>
+      <%= cl_image_tag course.cover_image.url, class: "object-cover h-80", crop: :scale, width: 400, cloud_name: 'dkyqazxdm' if course.cover_image.attached?  %>
+    <% end %>
+
+    <article class="p-5">
+    <strong class="block font-medium mb-1"><%= course.title %></strong>
+
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1 overflow-ellipsis">Description:</strong>
+    <%= course.description %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1 truncate">Content:</strong>
+    <%= course.content %>
+  </p>
+
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+
+
+  </p>
+  <% if action_name != "show" %>
+    <%= link_to "Show this course", course, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this course', edit_course_path(course), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+
+    </article>
+  </div>
+</div>
+
+

@@ -60,3 +60,15 @@ gem "jquery-rails", "~> 4.4"
 gem "font-awesome-sass", "~> 5.15"
 gem "simple_form", "~> 5.1"
 gem "country_select", "~> 6.0"
+
+gem "rolify", "~> 6.0"
+
+gem "devise", "~> 4.8"
+
+gem "pundit", "~> 2.1"
+
+gem "cloudinary", "~> 1.21"
+
+gem "activestorage-cloudinary-service", "~> 0.2.3"
+
+gem "dotenv-rails", "~> 2.7"
